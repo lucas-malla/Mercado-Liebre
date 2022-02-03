@@ -1,0 +1,102 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #ebebeb;
+    margin: 5px;
+}
+
+main {
+    background-color: white;
+    width: 35%;
+    border-radius: 10px;
+}
+
+h4 {
+    font-size: 24px;
+    opacity: 12%;
+    border-radius: 5px 5px 0 0;
+}
+
+hr {
+    width: 100%;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    padding: 25px 25px 25px 0px;
+    border-radius: 10px;
+
+}
+
+form div {
+    padding: 10px;
+
+}
+
+label {
+    font-size: 16px;
+}
+
+form div .naci {
+    padding: 10px 5px;
+    font-size: 16px;
+}
+
+form div input {
+    border: 2px solid;
+    font-size: 16px;
+    border-radius: 5px;
+    padding: 5px 3px;
+}
+
+input {
+    width: 100%;
+}
+
+input:hover {
+    background-color: #ebebeb;
+
+}
+
+form .interes {
+    display: flex;
+    flex-direction: column;
+
+
+}
+
+form div .guardar button {
+    padding: 10px 5px;
+    background-color: rgb(255, 253, 253);
+    border-radius: 5px;
+}
+
+button a {
+    color: #666;
+}
+
+button:hover {
+    box-shadow: 3px 3px rgba(0, 0, 0, 0.2);
+}
+
+.interes p {
+    font-size: 16px;
+}
+
+.pie {
+    border-radius: 0 0 5px 5px;
+}
+
+@media (max-width: 500px) {
+    main {
+
+        width: 100%;
+
+    }
+}
