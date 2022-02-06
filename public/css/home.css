@@ -1,195 +1,232 @@
-.baner {
-    width: 100%;
+* {
+    box-sizing: border-box;
+
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+
+h2 {
+    font-size: 24px;
+
 }
 
 h3 {
-    text-align: center;
-    margin: 5px;
+    font-size: 24px;
 }
 
-.categories {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+p .price {
+    font-size: 18px;
 }
 
-.categories a {
-    width: 45%;
-    max-width: 170px;
-    margin: 5px;
-    background-color: rgba(255, 255, 255, 0.705);
-    border-radius: 10px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-main .categories a {
-    display: flex;
-    flex-wrap: wrap;
-    border: black solid 2px;
-    border-radius: 10px;
-}
-
-a img {
-    height: 100px;
-    max-width: 100%;
-    border-radius: 10px;
-}
-
-a {
-    text-decoration: none;
-    font-weight: bold;
-    color: #000;
-}
-
-.categories a p {
-    text-align: center;
-    padding-bottom: 5px;
-}
-
-.img_juegos {
-    max-width: 80%;
-    padding: 10px 20px;
-    height: auto;
-}
-
-main .search_bar {
-    display: flex;
-    justify-self: center;
-    width: 300px;
-    justify-content: space-between;
-    background-color: rgb(238, 234, 234);
-    border-radius: 10px;
-    padding: 2px 10px;
-    margin: auto;
-    margin-top: 15px;
-}
-
-.nav_bar {
-    display: flex;
-    margin: 10px;
-    margin-top: 15px;
-    justify-content: center;
-    padding: 0px;
-}
-
-.nav_bar li {
-    margin: 0px 10px;
-    font-weight: bold;
-}
-
-main .line {
-    width: 600px;
-    margin: auto;
+p {
+    font-size: 16px;
 }
 
 h4 {
+    font-size: 16px;
+}
+
+hr {
+    background-color: #39b54a;
+    width: 75%;
+
+}
+
+.logo {
+    width: 10%;
+}
+
+header {
+    background-color: #EAC926;
+    width: 100%;
+    display: grid;
+    justify-content: space-around;
+    width: 100%;
+    padding-bottom: 5px;
+    position: fixed;
+    top: 0;
+
+}
+
+.main-header1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+}
+
+header .formulario {
+    display: flex;
+    align-items: center;
+
+}
+
+header form .barra_busq {
+    width: auto;
+    background-color: white;
+    padding: 5px 10px;
+    border-radius: 10px;
+
+}
+
+header form input {
+    border: none;
+}
+
+header form button {
+    border: none;
+    opacity: 25%;
+}
+
+header form i {
+    border: none;
+    opacity: 25%;
+}
+.right-navbar  li a {
+    color: black;
+    list-style-type: none;
+    transform: none;
+    padding: 0;
+    margin: 0;
+}
+
+header .hambur-botton {
+    background-color: rgb(1, 1, 136);
+    color: white;
+    width: 50px;
+    padding: 14px 0;
+    border-radius: 8px;
     text-align: center;
-    margin-top: 20px;
-    margin-bottom: 5px;
+    font-size: 20px;
+    margin: auto;
+
+    display: none;
 }
 
-.destacados .products {
-    margin-top: 2px;
+/* main */
+main {
+    background-color: #ebebeb;
+    margin: 5%;
+    border-radius: 5px;
+    box-shadow: 5px 5px 10px 10px #d4cece;
+
+}
+
+.main-nav {
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.main-nav ul {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+
+}
+
+.main-nav li {
+    padding: 0 10px;
+}
+
+.main-nav a {
+    color: #ebebeb;
+    display: inline-block;
+    padding: 5px 0;
+    font-size: 17px;
 }
 
 
-@media (min-width: 500px) {
-    .carrusel {
+
+.banner {
+    width: 100%;
+
+}
+
+.visitas img {
+    width: 100%;
+}
+
+div .main-article {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    margin: auto;
+    width: 50%;
+    border-radius: 5px;
+    box-shadow: 5px 5px 10px 10px #d4cece;
+}
+
+main .visitas {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    gap: 50px;
+    padding: 30px;
+}
+
+div .texto {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding: 5px;
+
+}
+
+.visitas i {
+    border: 2px solid #39b54a;
+    padding: 10px;
+    border-radius: 100%;
+    position: static;
+    left: 10px;
+    top: 50px;
+    color: #39b54a;
+}
+
+
+@media (max-width:500px) {
+    header {
         width: 100%;
-        height: 300px;
-        background-color: rgb(115, 236, 115);
-        margin: auto;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-
     }
 
-    .destacados .products {
-        display: flex;
-        flex-wrap: wrap;
-        max-width: 60%;
-        padding: 0px;
-        margin-top: 15px;
-        margin: auto;
-        justify-content: center;
-    }
-
-    .products a {
-        display: flex;
-        flex-wrap: wrap;
-        align-content: start;
-        width: 170px;
-        height: 270px;
-        margin: 5px;
-        border-radius: 10px;
-        display: flex;
-        justify-content: center;
-        border: rgba(0, 0, 0, 0.534) solid 1px;
-        border-radius: 10px;
-        margin-top: 10px;
-    }
-
-    .destacados .products img {
-        margin: 15px 0px;
-
-    }
-
-    .destacados .products .prod_name {
-        text-align: center;
+    .logo {
         width: 100%;
-        height: 35px;
     }
 
-    hr {
-        color: grey;
-
+    form {
+        border: 2px solid tomato;
+        display: none;
     }
 
-    .destacados .products .prices {
+    header .hambur-botton {
         display: block;
-        margin-top: 10px;
-        width: 70%;
-
     }
 
-    .destacados .products .price {
-        margin-top: 10px;
-        font-size: 12px;
-        color: gray;
-        text-decoration: line-through;
-        display: block;
+    .main-header2 {
+        border: 2px solid red;
 
+        display: none;
     }
 
-    .destacados .products .price_down {
+    .main-nav {
+        display: none;
+    }
+
+    main .visitas {
         width: 100%;
-        font-size: 18px;
-        display: flex;
-        font-weight: normal;
-        margin-top: 5px;
-        justify-content: space-between;
+        display: block;
+        margin: auto;
+
     }
 
-    .destacados .products .price_down .dto {
-        color: rgb(10, 212, 10);
-        font-weight: bold;
-        font-size: 12px;
-        align-self: end;
-    }
-
-    .envios {
-        background-color: rgb(10, 212, 10);
-        color: white;
-        border-radius: 15px;
-        height: 20px;
-        padding: 5px;
-        font-size: 16;
-        align-items: center;
-        display: flex;
-        margin-top: 6px;
-
+    div .main-article {
+        width: 100%;
+        margin: 10px;
     }
 }
